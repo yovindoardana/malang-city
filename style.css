@@ -1,0 +1,43 @@
+/* Colors */
+:root {
+	--color-primary: #008374;
+}
+body {
+	color: var(--color-default);
+}
+
+.hero {
+	width: 100%;
+	position: relative;
+	background-image: url(assets/bg-banner.png);
+	padding: 60px 0 0 0;
+	background-repeat: no-repeat;
+}
+
+.hero .icon-boxes {
+	padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+	.hero .icon-boxes:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: calc(50% + 20px);
+		background-color: #fff;
+	}
+}
+
+.hero .icon-box {
+	padding: 60px 30px;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
